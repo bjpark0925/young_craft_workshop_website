@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/gbti.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/gbti.js" defer></script>
+    <title>영공방_공BTI</title>
+</head>
+
+<body>
+    <h1 id="header"><a href="main.html">영공방</a></h1>
+    <div class="topnav" id="myTopnav">
+        <a href="intro.html">공방 소개</a>
+        <a href="cv.html">강사 이력</a>
+        <a href="gbti.html">공BTI 테스트</a>
+        <a href="class.html">클래스</a>
+        <a href="handcraft.html">명작 소개</a>
+        <a href="allcraft.html">작품 전시관</a>
+        <a id="bottomButton" href="#footer">맨 밑으로(이름, 학번)</a>
+        <a href="javascript:void(0);" class="icon hamburger" onclick="toggleNav()">&#9776;</a>
+    </div>
+
+    <div class="content" id="start-page">
+        <h2>공예 초심자를 위한 10초 공BTI 테스트</h2>
+        <button class="answer-btn" onclick="startTest()">시작하기</button>
+    </div>
+
+    <div class="content hidden" id="question-page">
+        <div id="question-container">
+            <p class="question" id="question-text"></p>
+            <button class="answer-btn" onclick="answerQuestion(true)">그렇다</button>
+            <button class="answer-btn" onclick="answerQuestion(false)">아니다</button>
+        </div>
+    </div>
+
+    <div class="content hidden" id="result-page">
+        <p id="result-text"></p>
+        <button class="answer-btn" onclick="restartTest()">다시하기</button>
+    </div>
+
+    <div id="footer">
+        <h3>Copyrignt</h3>
+        <p>이름: 박병준</p>
+        <p>학번: 2019312014</p>
+        <p>SKKU COMEDU</p>
+        <a id="topButton" href="#header">맨 위로</a>
+    </div>
+</body>
+
+</html>

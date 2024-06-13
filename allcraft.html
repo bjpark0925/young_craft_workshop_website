@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/allcraft.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/allcraft.js" defer></script>
+    <title>영공방_작품전시관</title>
+
+</head>
+
+<body>
+    <h1 id="header"><a href="main.html">영공방</a></h1>
+    <div class="topnav" id="myTopnav">
+        <a href="intro.html">공방 소개</a>
+        <a href="cv.html">강사 이력</a>
+        <a href="gbti.html">공BTI 테스트</a>
+        <a href="class.html">클래스</a>
+        <a href="handcraft.html">명작 소개</a>
+        <a href="allcraft.html">작품 전시관</a>
+        <a id="bottomButton" href="#footer">맨 밑으로(이름, 학번)</a>
+        <a href="javascript:void(0);" class="icon hamburger" onclick="toggleNav()">&#9776;</a>
+    </div>
+
+    <div class="content">
+        <h2 style="text-align: center; color:#7B9ACC">작품 전시관</h2>
+        <hr>
+
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="images/allcraft1.jpg" alt="Image 1">
+                <div class="carousel-caption">톨 페인팅</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/allcraft2.jpg" alt="Image 2">
+                <div class="carousel-caption">포크아트</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/allcraft3.jpg" alt="Image 3">
+                <div class="carousel-caption">톨 페인팅</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/allcraft4.jpg" alt="Image 4">
+                <div class="carousel-caption">포크아트</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/allcraft5.jpg" alt="Image 5">
+                <div class="carousel-caption">톨 페인팅</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/allcraft6.jpg" alt="Image 6">
+                <div class="carousel-caption">클레이아트</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/allcraft7.jpg" alt="Image 7">
+                <div class="carousel-caption">스컬프쳐 페인팅</div>
+            </div>
+            <!-- 이미지 필요한 만큼 삽입 가능 -->
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <!-- Add more dots as needed -->
+        </div>
+    </div>
+
+    <div id="footer">
+        <h3>Copyrignt</h3>
+        <p>이름: 박병준</p>
+        <p>학번: 2019312014</p>
+        <p>SKKU COMEDU</p>
+        <a id="topButton" href="#header">맨 위로</a>
+    </div>
+</body>
+
+</html>

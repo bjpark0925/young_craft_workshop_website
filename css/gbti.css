@@ -1,0 +1,35 @@
+.content {
+    text-align: center;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #7B9ACC;
+    color: #FCF6F5;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.answer-btn:hover {
+    background-color: #FCF6F5;
+    color: #7B9ACC;
+}
+
+.hidden {
+    display: none;
+}

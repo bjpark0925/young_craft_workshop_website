@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/return.css">
+    <link rel="stylesheet" href="css/product1.css">
+    <script src="js/nav.js" defer></script>
+    <title>영공방_클래스1</title>
+</head>
+
+<body>
+    <h1 id="header"><a href="main.html">영공방</a></h1>
+    <div class="topnav" id="myTopnav">
+        <a href="intro.html">공방 소개</a>
+        <a href="cv.html">강사 이력</a>
+        <a href="gbti.html">공BTI 테스트</a>
+        <a href="class.html">클래스</a>
+        <a href="handcraft.html">명작 소개</a>
+        <a href="allcraft.html">작품 전시관</a>
+        <a id="bottomButton" href="#footer">맨 밑으로(이름, 학번)</a>
+        <a href="javascript:void(0);" class="icon hamburger" onclick="toggleNav()">&#9776;</a>
+    </div>
+
+    <div class="content">
+        <div class="header-row">
+            <a id="returnButton" href="class.html">클래스로 돌아가기</a>
+            <h2>레진아트 클래스</h2>
+        </div>
+        <hr>
+        <div class="columns">
+            <div class="column left">
+                <!--video 태그 대신 iframe 태그를 사용하여 YouTube 영상을 삽입함-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CXmYAZV-JkI?si=h5s0M1BwxfrjMCya"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="column right">
+                <p>이름: 레진아트로 볼펜 꾸미기</p>
+                <p>제작 단가: 5,000원</p>
+                <p>공예품 제작 시 기대 효과: 창의력 증진</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h3>Copyrignt</h3>
+        <p>이름: 박병준</p>
+        <p>학번: 2019312014</p>
+        <p>SKKU COMEDU</p>
+        <a id="topButton" href="#header">맨 위로</a>
+    </div>
+</body>
+
+</html>
