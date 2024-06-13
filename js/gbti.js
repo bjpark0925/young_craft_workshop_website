@@ -7,7 +7,6 @@ const questions = [
 
 let currentQuestion = 0;
 let flag = [false, false, false, false];
-let count = 0;
 
 function startTest() {
     document.getElementById('start-page').classList.add('hidden');
@@ -25,12 +24,11 @@ function showQuestion() {
 
 function answerQuestion(answer) {
     if (answer) {
-        flag[count] = true;
+        flag[currentQuestion] = true;
     }
     else {
-        flag[count] = false;
+        flag[currentQuestion] = false;
     }
-    count++;
     currentQuestion++;
     showQuestion();
 }
@@ -94,7 +92,7 @@ function showResult() {
 
 function restartTest() {
     currentQuestion = 0;
-    score = 0;
+    flag = [false, false, false, false];
     document.getElementById('result-page').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
 }
