@@ -18,16 +18,16 @@
     width: 200px;
     margin: 10px auto;
     padding: 10px;
-    background-color: #7B9ACC;
-    color: #FCF6F5;
+    background-color: #02343F;
+    color: #F0EDCC;
     border: none;
     cursor: pointer;
     font-size: 1em;
 }
 
 .answer-btn:hover {
-    background-color: #FCF6F5;
-    color: #7B9ACC;
+    background-color: #F0EDCC;
+    color: #02343F;
 }
 
 .hidden {

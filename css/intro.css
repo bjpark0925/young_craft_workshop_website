@@ -1,6 +1,6 @@
 .content {
     padding: 10px;
-    color: #3E2723;
+    color: #02343F;
 }
 
 .column {
@@ -13,12 +13,12 @@
 }
 
 .column.right {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin: 10px;
     display: flex;
@@ -28,6 +28,6 @@
 }
 
 hr {
-    border: 1px solid #3E2723;
+    border: 1px solid #02343F;
     width: 25%;
 }

@@ -1,21 +1,22 @@
 .topnav {
     overflow: hidden;
-    background-color: #81a1d6;
+    background-color: #02343F;
 }
 
 .topnav a {
     float: left;
     display: block;
-    color: #FCF6F5;
-    background-color: #7B9ACC;
+    color: #F0EDCC;
+    background-color: #02343F;
+    font-size: 0.9em;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .topnav a:hover {
-    background-color: #FCF6F5;
-    color: #7B9ACC;
+    background-color: #F0EDCC;
+    color: #02343F;
 }
 
 @media screen and (min-width: 620px) {
@@ -59,14 +60,15 @@
     position: relative;
     clear: both;
     text-align: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 10px;
-    color: rgb(182, 182, 182);
+    color: #02343F;
+    font-size: 0.9em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,14 +81,14 @@
     bottom: 10px;
     text-align: center;
     text-decoration: none;
-    background-color: #7B9ACC;
-    color: #FCF6F5;
+    background-color: #02343F;
+    color: #F0EDCC;
     padding: 7px 8px;
 }
 
 #topButton:hover {
-    background-color: black;
-    color: white;
+    background-color: #F0EDCC;
+    color: #02343F;
 }
 
 #bottomButton {

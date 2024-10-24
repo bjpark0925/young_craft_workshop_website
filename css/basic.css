@@ -4,11 +4,11 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    background: linear-gradient(135deg, #cae3fc, #f1e2ff);
-    /* 밝은 청색과 라벤더 그라데이션 */
-    color: #7B9ACC;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0EDCC;
+    color: #02343F;
+    font-size: 0.85em;
 }
 
 #header {
@@ -17,8 +17,8 @@ body {
 }
 
 #header a {
+    color: #02343F;
     text-decoration: none;
-    color: #7B9ACC;
 }
 
 @media screen and (max-width: 850px) {
