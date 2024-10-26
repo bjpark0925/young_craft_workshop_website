@@ -2,3 +2,13 @@
     color: #02343F;
     margin: 0;
 }
+
+@media screen and (max-width: 620px) {
+    .column.left {
+        flex: 1 0 100%;
+    }
+
+    .column.right {
+        flex: 1 0 75%;
+    }
+}

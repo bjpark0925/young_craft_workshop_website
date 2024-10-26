@@ -30,3 +30,11 @@ body {
         flex: 1 0 75%;
     }
 }
+
+@media screen and (max-width: 620px) {
+    iframe {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+    }
+}
