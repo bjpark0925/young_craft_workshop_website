@@ -31,3 +31,11 @@ hr {
     border: 1px solid #02343F;
     width: 25%;
 }
+
+@media screen and (max-width: 620px) {
+    iframe {
+        display: block;
+        margin: 0 0;
+        width: 62%;
+    }
+}
