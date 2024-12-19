@@ -34,17 +34,24 @@ function answerQuestion(answer) {
 }
 
 async function showResult() {
-    const response = await fetch("https://1xpsf9378c.execute-api.ap-northeast-2.amazonaws.com/prod", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ flag: flag })
-    });
-    const data = await response.json();
-    document.getElementById("result-text").textContent = data.result;
-
     document.getElementById('question-page').classList.add('hidden');
     document.getElementById('result-page').classList.remove('hidden');
+
+    const apiUrl = "https://1tci5ktb9h.execute-api.ap-northeast-2.amazonaws.com/prod/gbti-result"; // API Gateway에서 생성한 URL 입력
+    const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ flags: flag }),
+    });
+
+    if (response.ok) {
+        const data = await response.json();
+        document.getElementById('result-text').textContent = data.result;
+    } else {
+        document.getElementById('result-text').textContent = "결과를 가져오는 데 실패했습니다. 다시 시도해주세요.";
+    }
 }
+
 
 function restartTest() {
     currentQuestion = 0;
