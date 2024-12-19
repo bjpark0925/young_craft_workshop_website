@@ -34,7 +34,7 @@ function answerQuestion(answer) {
 }
 
 async function showResult() {
-    const response = await fetch("https://1xpsf9378c.execute-api.ap-northeast-2.amazonaws.com/prod/gbti-result", {
+    const response = await fetch("https://1xpsf9378c.execute-api.ap-northeast-2.amazonaws.com/prod", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ flag: flag })
